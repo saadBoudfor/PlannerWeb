@@ -1,1 +1,26 @@
-
+<div class="container">
+  <div class="row">
+    <div class="col m5 center-align">
+      <mz-card
+        class="blue-grey lighten-5" [hoverable]="true">
+        <mz-card-content>
+          <mz-tab
+            [fixedTabWidth]="'true'"
+            [onShow]="callbackFunction()"
+            [responsiveThreshold]="'true'"
+            [swipeable]="'true'"
+          >
+            <mz-tab-item
+              [active]="'true'"
+              [disabled]="'true'"
+              [label]="'Tab 1'"
+            >
+              Tab 1
+            </mz-tab-item>
+            <mz-tab-item [label]="'Tab 2'">Tab 2</mz-tab-item>
+          </mz-tab>
+        </mz-card-content>
+      </mz-card>
+    </div>
+  </div>
+</div>

@@ -1,11 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MzButtonModule, MzCardModule, MzTabModule} from 'ng2-materialize';
 
-import { MzButtonModule } from 'ng2-materialize';
 
 @NgModule({
   declarations: [
@@ -14,7 +12,9 @@ import { MzButtonModule } from 'ng2-materialize';
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
-    MzButtonModule
+    MzButtonModule,
+    MzCardModule,
+    MzTabModule
   ],
   providers: [],
   bootstrap: [AppComponent]
